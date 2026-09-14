@@ -1,0 +1,16 @@
+[general]
+name=Terrain Visibility Change Analyzer
+description=Compare terrain visibility between two DEM scenarios from one observer location.
+about=QGIS plugin for raster viewshed comparison between an existing and future DEM. Supports one observer point selected on the map, user-defined eye height, Earth curvature and standard atmospheric refraction. This initial version provides the graphical user interface and observer selection workflow.
+version=0.1.0
+qgisMinimumVersion=3.44
+author=Sali Alavi
+email=
+repository=https://github.com/Sali-alavi/visibilityplugin
+homepage=https://github.com/Sali-alavi/visibilityplugin
+tracker=https://github.com/Sali-alavi/visibilityplugin/issues
+category=Raster
+tags=viewshed, visibility, DEM, terrain, GDAL, landscape
+experimental=True
+deprecated=False
+hasProcessingProvider=False
