@@ -14,3 +14,4 @@ tags=viewshed, visibility, DEM, terrain, GDAL, landscape
 experimental=True
 deprecated=False
 hasProcessingProvider=False
+icon=icon.png
