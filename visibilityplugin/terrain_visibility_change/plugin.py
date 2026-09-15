@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 
 """
 Main plugin logic for Surface Visibility and Viewing-Angle Change Analyzer.
@@ -6,6 +6,7 @@ Main plugin logic for Surface Visibility and Viewing-Angle Change Analyzer.
 
 from datetime import datetime
 from pathlib import Path
+from qgis.PyQt.QtGui import QIcon
 
 from qgis.PyQt.QtGui import QColor
 from qgis.PyQt.QtWidgets import QAction, QMessageBox
@@ -76,10 +77,16 @@ class TerrainVisibilityChangePlugin:
 
     def initGui(self):
         """
-        Creates plugin menu and toolbar entry.
+        Creates plugin menu and toolbar entry with plugin icon.
         """
 
+        icon_path = (
+            Path(__file__).resolve().parent
+            / "icon.png"
+        )
+
         self.action = QAction(
+            QIcon(str(icon_path)),
             "Surface Visibility and Viewing-Angle Analyzer",
             self.iface.mainWindow(),
         )
@@ -1340,3 +1347,4 @@ class TerrainVisibilityChangePlugin:
             )
 
             self.observer_marker = None
+
