@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 
 """
 User interface for the Surface Visibility and Viewing-Angle Change Analyzer.
@@ -120,12 +120,12 @@ class TerrainVisibilityDialog(QDialog):
         surface_form = QFormLayout()
 
         surface_form.addRow(
-            "Existing surface model / 2026:",
+            "Existing surface model:",
             self.dem_2026_combo,
         )
 
         surface_form.addRow(
-            "Future surface model / 2230:",
+            "Future surface model:",
             self.dem_2230_combo,
         )
 
